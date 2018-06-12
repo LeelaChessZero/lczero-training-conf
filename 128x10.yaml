@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+name: 'lc0-128x10'                       # ideally no spaces
+gpu: 0                                 # gpu id to process on
+
+dataset: 
+  num_chunks: 120000                   # newest nof chunks to parse
+  train_ratio: 0.90                    # trainingset ratio
+  # For separated test and train data.
+  input_train: '/ramdisk/train/' # supports glob
+  input_test: '/ramdisk/test/'  # supports glob
+  # For a one-shot run with all data in one directory.
+  #input: '/work/lc0/data/'
+
+training:
+    batch_size: 1024                   # training batch
+    test_steps: 500                    # eval test set values after this many steps
+    train_avg_report_steps: 200        # training reports its average values after this many steps.
+    total_steps: 5000                  # terminate after these steps
+    # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
+    shuffle_size: 500000               # size of the shuffle buffer
+    lr_values:                         # list of learning rates
+        - 0.05
+        - 0.05
+    lr_boundaries:                     # list of boundaries
+        - 2000
+    policy_loss_weight: 1.0            # weight of policy loss
+    value_loss_weight: 1.0             # weight of value loss
+    path: '/work/lc0/networks'         # network storage dir
+
+model:
+  filters: 128
+  residual_blocks: 10
+...
