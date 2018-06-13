@@ -15,15 +15,15 @@ dataset:
 training:
     batch_size: 2048                   # training batch
     test_steps: 250                    # eval test set values after this many steps
-    train_avg_report_steps: 100        # training reports its average values after this many steps.
-    total_steps: 2500                 # terminate after these steps
+    train_avg_report_steps: 125        # training reports its average values after this many steps.
+    total_steps: 250                 # terminate after these steps
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
         - 0.1
         - 0.1
     lr_boundaries:                     # list of boundaries
-        - 1000
+        - 100
     policy_loss_weight: 1.0            # weight of policy loss
     value_loss_weight: 1.0             # weight of value loss
     path: '/work/lc0/networks'         # network storage dir
