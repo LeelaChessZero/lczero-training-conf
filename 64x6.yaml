@@ -4,7 +4,7 @@ name: '64x6-1a-1'                       # ideally no spaces
 gpu: 0                                 # gpu id to process on
 
 dataset: 
-  num_chunks: 120000                   # newest nof chunks to parse
+  num_chunks: 160000                   # newest nof chunks to parse
   train_ratio: 0.90                    # trainingset ratio
   # For separated test and train data.
   input_train: '/ramdisk/train/' # supports glob
@@ -20,8 +20,8 @@ training:
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
-        - 0.03
-        - 0.03
+        - 0.01
+        - 0.01
     lr_boundaries:                     # list of boundaries
         - 100
     policy_loss_weight: 1.0            # weight of policy loss
