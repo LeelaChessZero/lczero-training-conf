@@ -20,8 +20,8 @@ training:
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
-        - 0.015
-        - 0.015
+        - 0.005
+        - 0.005
     lr_boundaries:                     # list of boundaries
         - 2000
     policy_loss_weight: 1.0            # weight of policy loss
