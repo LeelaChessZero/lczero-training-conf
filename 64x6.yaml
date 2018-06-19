@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: '64x6-test-6'                       # ideally no spaces
+name: '64x6-test-7'                       # ideally no spaces
 gpu: 0                                 # gpu id to process on
 
 dataset: 
@@ -20,8 +20,8 @@ training:
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
-        - 0.001
-        - 0.001
+        - 0.1
+        - 0.1
     lr_boundaries:                     # list of boundaries
         - 100
     policy_loss_weight: 1.0            # weight of policy loss
