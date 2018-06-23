@@ -4,7 +4,7 @@ name: '64x6-test-9'                    # ideally no spaces
 gpu: 0                                 # gpu id to process on
 
 dataset: 
-  num_chunks: 120000                   # newest nof chunks to parse
+  num_chunks: 150000                   # newest nof chunks to parse
   train_ratio: 0.90                    # trainingset ratio
   # For separated test and train data.
   input_train: '/ramdisk/train/' # supports glob
