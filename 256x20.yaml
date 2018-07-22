@@ -15,9 +15,9 @@ dataset:
 training:
     batch_size: 4096                   # training batch
     num_batch_splits: 8
-    test_steps: 500                    # eval test set values after this many steps
-    train_avg_report_steps: 250        # training reports its average values after this many steps.
-    total_steps: 2500                  # terminate after these steps
+    test_steps: 125                    # eval test set values after this many steps
+    train_avg_report_steps: 125        # training reports its average values after this many steps.
+    total_steps: 625                  # terminate after these steps
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
