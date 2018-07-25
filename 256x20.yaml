@@ -25,7 +25,7 @@ training:
         - 0.02
     lr_boundaries:                     # list of boundaries
         - 100
-    policy_loss_weight: 1.0            # weight of policy loss
+    policy_loss_weight: 0.75            # weight of policy loss
     value_loss_weight: 0.75            # weight of value loss
     path: '/work/lc0/networks'         # network storage dir
 
