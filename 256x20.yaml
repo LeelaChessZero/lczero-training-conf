@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: '256x20-test-1'                  # ideally no spaces
+name: '256x20-test-2'                  # ideally no spaces
 gpu: 0                                 # gpu id to process on
 
 dataset: 
@@ -15,14 +15,14 @@ dataset:
 training:
     batch_size: 4096                   # training batch
     num_batch_splits: 8
-    test_steps: 50                    # eval test set values after this many steps
+    test_steps: 125                    # eval test set values after this many steps
     train_avg_report_steps: 50        # training reports its average values after this many steps.
     total_steps: 250                  # terminate after these steps
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
-        - 0.0002
-        - 0.0002
+        - 0.2
+        - 0.2
     lr_boundaries:                     # list of boundaries
         - 100
     policy_loss_weight: 1.0            # weight of policy loss
