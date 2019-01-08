@@ -18,7 +18,7 @@ training:
     swa_max_n: 1
     max_grad_norm: 2
     batch_size: 4096                   # training batch
-    num_batch_splits: 4
+    num_batch_splits: 8
     test_steps: 125                    # eval test set values after this many steps
     train_avg_report_steps: 50        # training reports its average values after this many steps.
     total_steps: 250                  # terminate after these steps
