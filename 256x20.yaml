@@ -15,7 +15,7 @@ dataset:
 training:
     swa: true
     swa_steps: 25
-    swa_max_n: 15
+    swa_max_n: 5
     max_grad_norm: 2
     batch_size: 4096                   # training batch
     num_batch_splits: 8
