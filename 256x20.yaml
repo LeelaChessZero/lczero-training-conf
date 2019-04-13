@@ -16,7 +16,7 @@ training:
     swa: true
     swa_steps: 25
     swa_max_n: 15
-    max_grad_norm: 2
+    max_grad_norm: 2.5
     batch_size: 4096                   # training batch
     num_batch_splits: 8
     test_steps: 125                    # eval test set values after this many steps
