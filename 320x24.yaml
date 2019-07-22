@@ -5,6 +5,7 @@ gpu: 0                                 # gpu id to process on
 
 dataset: 
   num_chunks: 1000000                   # newest nof chunks to parse
+  allow_less_chunks: true
   train_ratio: 0.90                    # trainingset ratio
   # For separated test and train data.
   input_train: '/ramdisk/dev1/train/' # supports glob
@@ -14,6 +15,7 @@ dataset:
 
 training:
     swa: true
+    swa_output: true
     swa_steps: 25
     swa_max_n: 1
     mask_legal_moves: true
