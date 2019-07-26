@@ -24,8 +24,8 @@ training:
     renorm_max_d: 0.0
     q_ratio: 0.2
     max_grad_norm: 2.5
-    batch_size: 4096                   # training batch
-    num_batch_splits: 16
+    batch_size: 4160                   # training batch
+    num_batch_splits: 13
     test_steps: 125                    # eval test set values after this many steps
     num_test_positions: 80000
     train_avg_report_steps: 25        # training reports its average values after this many steps.
@@ -34,8 +34,8 @@ training:
     # checkpoint_steps: 10000          # optional frequency for checkpointing before finish
     shuffle_size: 500000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
-        - 0.2
-        - 0.2
+        - 0.15
+        - 0.15
     lr_boundaries:                     # list of boundaries
         - 100
     policy_loss_weight: 1.0            # weight of policy loss
