@@ -17,7 +17,7 @@ training:
     swa: true
     swa_output: true
     swa_steps: 25
-    swa_max_n: 1
+    swa_max_n: 5
     mask_legal_moves: false
     renorm: true
     renorm_max_r: 1.0
