@@ -23,7 +23,7 @@ training:
     renorm_max_r: 1.0
     renorm_max_d: 0.0
     q_ratio: 0.2
-    max_grad_norm: 2.5
+    max_grad_norm: 1.0
     batch_size: 4160                   # training batch
     num_batch_splits: 13
     test_steps: 125                    # eval test set values after this many steps
